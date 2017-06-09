@@ -26,7 +26,11 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === 'ping') {
-        message.reply('pong');
+        message.channel.send('pong');
+    } else if (message.content === 'swear') {
+        var temp = message;
+        message.delete();
+        temp.channel.send('Don Swear keeds', [{ embed: {} }]);
     }
 });
 
