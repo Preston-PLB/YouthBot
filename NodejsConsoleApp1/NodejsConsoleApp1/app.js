@@ -17,8 +17,15 @@ client.on('message', message => {
 // swear filter
 client.on('message', message => {
     if (message.content.includes('swear')) {
-        // message.channel.send('pong');
+        // message.delete();
         message.edit('i just used a bad word')
+    }
+});
+
+// spicy
+client.on('message', message => {
+    if (message.content.includes('spicy')) {
+        message.react('hot_pepper');
     }
 });
 
