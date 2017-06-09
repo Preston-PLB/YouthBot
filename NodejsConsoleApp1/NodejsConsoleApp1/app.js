@@ -16,7 +16,7 @@ client.on('message', message => {
 
 // swear filter
 client.on('message', message => {
-    if (message.content.includes('bazoomba') {
+    if (message.content.includes('bazoomba')) {
         message.channel.send('pong');
     }
 });
