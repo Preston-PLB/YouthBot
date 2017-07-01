@@ -26,7 +26,7 @@ client.on('message', message => {
 
 // swear filter
 client.on('message', message => {
-    if (message.content.match(/bazinga/i)) {
+    if (message.content.match(/photosynthesis/i)) {
         tempmessage = message;
         message.delete();
         tempmessage.reply('http://imgh.us/swe.jpg');
